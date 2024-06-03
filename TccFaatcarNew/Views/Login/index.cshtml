@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+@model LoginModel 
+
+<div class="text-center">
+<h2>Login</h2>
+</div>
+<form class="align-content-center"  asp-controller="Login" asp-action="Entrar"  method="post">
+
+    <div class="text-center"
+           <div class="col-4">
+            <label for="Email">E-mail:</label>
+            <input  type="text" asp-for="Email" class="form-control" />
+        </div>
+
+        <div class="text-center">
+            <label for="Senha">Senha:</label>
+            <input  type="password" asp-for="Senha" class="form-control" />
+        </div>
+        <div>
+            <input type="checkbox" <p>Lembre-se de mim</p>
+      </div>
+
+        <div>
+            <a class="btn btn-primary" asp-controller="Feed" asp-action="">Concluido</a>
+            <a class="btn btn-primary" asp-controller="Login" asp-action="CadastrarSe">Cadastre se</a>
+        </div>
+
+        </div>
+
+
+
+    
+        
+       
+    
+
+
+
+      
+
+
+
+
+</form>

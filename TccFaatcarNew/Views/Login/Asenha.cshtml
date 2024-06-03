@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "AlterarSenha";
+}
+
+@model AsenhaModel
+
+<div class="text-center">
+    <h2>Alterar senha</h2>
+</div>
+<form>
+
+    <div class="col-4, text-center">
+        <label for="Email">Digite o E-mail cadastrado</label>
+        <input type="text" asp-for="Email" class="form-control" />
+    </div>
+
+
+    <div class="text-center">
+    <a class="btn btn-primary" asp-controller="" asp-action="">Enviar</a>
+    </div>
+
+
+</form>

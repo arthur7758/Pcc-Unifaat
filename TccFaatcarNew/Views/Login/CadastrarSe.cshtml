@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+
+@model CadastrarSeModel
+
+<div class="text-center">
+    <h2>Cadastro</h2>
+</div>
+<form>
+
+
+    <div class="col-2, text-center" >
+        <label for="Email">E-mail:</label>
+        <input type="text" asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="col-2, text-center">
+        <label for="Nome">Nome Completo:</label>
+        <input type="text" asp-for="Nome" class="form-control" />
+    </div>
+
+    <div class="col-2, text-center">
+        <label for="Senha">Senha</label>
+        <input type="password" asp-for="Senha" class="form-control" />
+    </div>
+
+    <div class="col-2, text-center">
+        <label for="Csenha">Confirme Senha:</label>
+        <input type="password" asp-for="Csenha" class="form-control" />
+    </div>
+    
+    <div class="col-2, text-center">
+        <label for="Ra">Registro academico</label>
+        <input type="text" asp-for="Ra" class="form-control" />
+    </div>
+
+    <div>
+        <a class="btn btn-primary" asp-controller="Login" asp-action="Feed">Concluido</a>
+    </div>
+
+</form>
+
+
+
